@@ -1,23 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Code, Link } from 'react-feather';
 
 const Card = styled.div`
   width: 300px;
   border-radius: 5px;
 `;
-const Info = styled.p`
-  display: none;
-  ${Card}:hover & {
-    display: block;
+const LinkIcons = styled.a`
+  margin: 0.5rem;
+  &:hover {
+    color: #757575;
   }
 `;
 
 const ProjectCard = ({ name, repo, demo }) => {
   return (
     <Card>
-      <h3>{name}</h3>
-      <a href={`https://github.com/koko57/${repo}`} target='blank'>gh</a>
-      <a href={demo} target='blank'>oko</a>
+      <p>{name}</p>
+      <LinkIcons href={`https://github.com/koko57/${repo}`} target="blank">
+        <Code size={'1rem'} />
+      </LinkIcons>
+      <LinkIcons href={demo} target="blank">
+        <Link size={'1rem'} />
+      </LinkIcons>
     </Card>
   );
 };

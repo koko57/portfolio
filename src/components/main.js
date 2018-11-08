@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { Wrapper, GlobalStyle } from './styled';
+import { Page, Wrapper, GlobalStyle } from './styled';
 
 const Main = ({ children }) => (
   <>
@@ -15,7 +15,9 @@ const Main = ({ children }) => (
       <html lang="en" />
     </Helmet>
     <GlobalStyle />
-    <Wrapper>{children}</Wrapper>
+    <Page>
+      <Wrapper>{children}</Wrapper>
+    </Page>
   </>
 );
 

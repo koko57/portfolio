@@ -1,32 +1,45 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Oxygen');
   * {
+    font-family: 'Playfair Display', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
   }
-  p {
-    @import url('https://fonts.googleapis.com/css?family=Roboto');
-    font-family: 'Roboto';
+  p, a, h2, h3, h4, h5{
+    font-family: 'Oxygen';
+    font-weight: normal;
     margin: 1rem auto;
+  }
+  a {
+    text-decoration: none;
+    &:visited, &:active {
+      color: #303030;
+    }
   }
 `;
 
-export const Wrapper = styled.div`
+export const Page = styled.div`
   height: 100vh;
   width: 100%;
-  background-color: #0b0b0b;
-  color: #f2f2f2;
-  padding: 4rem;
+  background-color: #f8f8f8;
+  color: #303030;
+`;
+
+export const Wrapper = styled.div`
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 4rem 6rem;
 `;
 
 export const Title = styled.h1`
-  font-size: ${props => (props.large ? '5rem' : '2rem')};
+  font-family: 'Playfair Display', serif;
+  font-size: ${props => props.size};
   text-transform: uppercase;
   font-weight: normal;
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
-  font-family: 'Open Sans';
   margin-bottom: 2rem;
 `;
