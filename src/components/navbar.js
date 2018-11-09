@@ -1,21 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Link } from 'gatsby';
-
-const Nav = styled.nav`
-  width: 100%;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  height: 15vh;
-  .wrapper {
-    margin: auto;
-    width: 80%;
-    max-width: 1000px;
-    display: flex;
-    justify-content: space-between;
-  }
-`;
+import {Nav} from './styled/nav'
+import {StyledLink} from './styled/styled'
 
 const Navbar = ({ links }) => {
   const navlinks = links.map(l => {
@@ -32,7 +18,6 @@ const Navbar = ({ links }) => {
         break;
     }
   });
-
   return (
     <Nav>
       <div className="wrapper">

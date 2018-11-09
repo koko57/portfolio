@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { Page, Wrapper, GlobalStyle } from './styled';
+import { Page, Wrapper, GlobalStyle } from './styled/styled';
 
 const Main = ({ children }) => (
   <>
@@ -12,6 +12,12 @@ const Main = ({ children }) => (
         { name: 'keywords', content: 'portfolio, web developer' }
       ]}
     >
+      <link
+        rel="icon"
+        type="image/png"
+        href="../static/favicon.ico"
+        sizes="16x16"
+      />
       <html lang="en" />
     </Helmet>
     <GlobalStyle />
