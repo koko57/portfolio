@@ -1,17 +1,16 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import {Nav} from './styled/nav'
-import {StyledLink} from './styled/styled'
+import { Nav, NavWrapper } from './styled/nav';
+import { StyledLink } from './styled/links';
 
 const Navbar = ({ links }) => {
   const navlinks = links.map(l => {
     switch (l) {
       case 'about':
-        return <Link to="/">About</Link>;
+        return <StyledLink to="/">About</StyledLink>;
       case 'works':
-        return <Link to="/works">My Works</Link>;
+        return <StyledLink to="/works">My Works</StyledLink>;
       case 'contact':
-        return <Link to="/contact">Contact</Link>;
+        return <StyledLink to="/contact">Contact</StyledLink>;
       case '':
         return '';
       default:
@@ -20,10 +19,10 @@ const Navbar = ({ links }) => {
   });
   return (
     <Nav>
-      <div className="wrapper">
+      <NavWrapper className="wrapper">
         <span>{navlinks[0]}</span>
         <span>{navlinks[1]}</span>
-      </div>
+      </NavWrapper>
     </Nav>
   );
 };

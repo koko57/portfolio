@@ -1,9 +1,10 @@
 import React from 'react';
-import { Title } from '../components/styled/styled';
-import { ProjectList } from '../components/styled/projectCard';
 import Main from '../components/main';
 import Navbar from '../components/navbar';
-import ProjectCard from '../components/project';
+import ProjectCard from '../components/projectCard';
+import { Title, Text } from '../components/styled/text';
+import { ProjectList } from '../components/styled/project';
+import { StyledA } from '../components/styled/links';
 import memory from '../../static/img/memory.png';
 import evnt from '../../static/img/evnt.png';
 import wro from '../../static/img/wro.png';
@@ -17,7 +18,7 @@ const works = () => (
         repo="Evnt"
         demo="http://evnt-220710.appspot.com/"
         desc="Event planner app."
-        stack="React / Redux / Node.js / MongoDB / Sass"
+        stack="React / Redux / Node.js / MongoDB"
         img={evnt}
       />
       <ProjectCard
@@ -33,10 +34,16 @@ const works = () => (
         repo="wrocfavs"
         demo="https://koko57.github.io/wrocfavs/"
         desc="List of favourite spots in Wroclaw."
-        stack="React / Sass / Google Maps API / Foursquare API"
+        stack="React / Google Maps API / Foursquare API"
         img={wro}
       />
     </ProjectList>
+    <Text align="center" margin="3rem 0">
+      More on{'   '}
+      <StyledA href="https://github.com/koko57" target="_blank">
+        GitHub
+      </StyledA>
+    </Text>
     <Navbar links={['about', 'contact']} />
   </Main>
 );

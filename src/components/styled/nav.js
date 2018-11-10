@@ -11,11 +11,12 @@ export const Nav = styled.nav`
     rgba(221, 221, 221, 0) 10%,
     rgba(248, 248, 248, 1) 50%
   );
-  .wrapper {
-    margin: auto;
-    width: 80%;
-    max-width: 1000px;
-    display: flex;
-    justify-content: space-between;
-  }
+`;
+
+export const NavWrapper = styled.div`
+  margin: auto;
+  width: 80%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
 `;

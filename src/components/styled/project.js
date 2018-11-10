@@ -38,37 +38,6 @@ export const Card = styled.div`
       font-size: 0.8em;
     }
   }
-  img {
-    height: 150px;
-    width: 300px;
-  }
-  .icons {
-    display: flex;
-    position: absolute;
-    bottom: 0.5rem;
-    justify-content: space-around;
-  }
-`;
-export const LinkIcons = styled.a`
-  display: inline-block;
-  margin: 0.5rem;
-  align-items: center;
-  height: 1rem;
-  &:hover {
-    span {
-      opacity: 1;
-    }
-  }
-  span {
-    @import url('https://fonts.googleapis.com/css?family=Oxygen');
-    font-size: 0.9rem;
-    opacity: 0;
-    transition: ease-in 0.3s;
-    margin: 0 0.5rem;
-    vertical-align: top;
-    font-family: 'Oxygen', sans-serif;
-
-  }
 `;
 
 export const ProjectList = styled.div`
@@ -85,3 +54,4 @@ export const ProjectList = styled.div`
     grid-template-columns: 1fr;
   }
 `;
+
