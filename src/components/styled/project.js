@@ -6,19 +6,31 @@ export const Card = styled.div`
   padding: 0.5rem;
   position: relative;
   margin: 0 auto 1rem;
-  @media screen and (max-width: 480px) {
-    width: 250px;
-    height: 130px;
-
-  }
-  &:hover {
+  ::after {
+    content: '';
     background-image: ${props => `url(${props.img})`};
     background-size: 290px 175px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #f3f3f399;
-    background-blend-mode: screen;
+    /* background-blend-mode: screen; */
+    transition: 0.25s ease-in;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
   }
+  :hover::after {
+    opacity: 0.7;
+  }
+  @media screen and (max-width: 480px) {
+    width: 250px;
+    height: 130px;
+  }
+
   p {
     font-size: 0.9rem;
     :last-of-type {
@@ -46,7 +58,6 @@ export const ProjectList = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, 280px);
   justify-content: space-around;
-  overflow-y: scroll;
   ::-webkit-scrollbar {
     display: none;
   }
@@ -54,4 +65,3 @@ export const ProjectList = styled.div`
     grid-template-columns: 1fr;
   }
 `;
-

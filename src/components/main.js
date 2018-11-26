@@ -6,7 +6,7 @@ import { Page, Wrapper, GlobalStyle } from './styled/styled';
 const Main = ({ children }) => (
   <>
     <Helmet
-      title="AK"
+      title="Agata Kosior"
       meta={[
         { name: 'description', content: 'Portfolio page' },
         { name: 'keywords', content: 'portfolio, web developer' }
@@ -15,7 +15,7 @@ const Main = ({ children }) => (
       <link
         rel="icon"
         type="image/png"
-        href="../static/favicon.ico"
+        href="../../static/favicon.ico"
         sizes="16x16"
       />
       <html lang="en" />

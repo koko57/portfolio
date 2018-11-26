@@ -6,6 +6,9 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+  body {
+    background-color: #f8f8f8;
+  }
   h1, h2 {
     font-family: 'Playfair Display', serif;
   }
@@ -16,6 +19,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   a {
     text-decoration: none;
+    color: #303030;
     &:visited, &:active {
       color: #303030;
     }
@@ -25,7 +29,6 @@ export const GlobalStyle = createGlobalStyle`
 export const Page = styled.div`
   height: 100vh;
   width: 100%;
-  background-color: #f8f8f8;
   color: #303030;
 `;
 
@@ -35,7 +38,7 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   padding: 4rem 4rem 6rem;
   display: flex;
-  align-items: center;
+  align-content: center;
   flex-direction: column;
   @media screen and (max-width: 480px) {
     padding: 4rem 2rem 6rem;

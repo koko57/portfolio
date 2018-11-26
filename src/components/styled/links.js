@@ -4,6 +4,7 @@ import { StyledUnderline } from './variables';
 
 export const StyledLink = styled(Link)`
   ${StyledUnderline}
+  margin: 0 1rem;
 `;
 
 export const StyledA = styled.a`
@@ -13,11 +14,12 @@ export const StyledA = styled.a`
 export const ContactLinks = styled.div`
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
   max-width: 640px;
   margin: auto;
   position: relative;
-  top: -5rem;
+  top: -1rem;
 `;
 
 export const LinkIcon = styled.a`
@@ -25,16 +27,16 @@ export const LinkIcon = styled.a`
   margin: 0.5rem;
   align-items: center;
   height: 1rem;
-  &:hover {
+  :hover {
     span {
       opacity: 1;
     }
   }
   span {
     @import url('https://fonts.googleapis.com/css?family=Oxygen');
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     opacity: 0;
-    transition: ease-in 0.3s;
+    transition: ease-in 0.25s;
     margin: 0 0.5rem;
     vertical-align: top;
     font-family: 'Oxygen', sans-serif;

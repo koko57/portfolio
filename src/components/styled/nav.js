@@ -18,5 +18,5 @@ export const NavWrapper = styled.div`
   width: 80%;
   max-width: 1000px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 `;

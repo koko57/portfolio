@@ -20,5 +20,5 @@ export const Text = styled.div`
   margin: ${({ margin }) => (margin ? margin : '0')};
   width: 100%;
   padding: ${({ pad }) => (pad ? pad : 0)};
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 `;
