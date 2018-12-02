@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { Page, Wrapper, GlobalStyle } from './styled/styled';
+import { GlobalStyle } from './styled/main/global';
+import { Page } from './styled/main/page';
+import { Wrapper } from './styled/main/wrapper';
 
 const Main = ({ children }) => (
   <>

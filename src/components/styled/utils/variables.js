@@ -18,7 +18,4 @@ export const StyledUnderline = () => `
     );
     transition: ease-in-out 0.25s;
   }
-  :hover::after {
-    width: 80%;
-  }
 `;

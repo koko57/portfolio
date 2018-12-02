@@ -2,9 +2,10 @@ import React from 'react';
 import Main from '../components/main';
 import Navbar from '../components/navbar';
 import ProjectCard from '../components/projectCard';
-import { Title, Text } from '../components/styled/text';
-import { ProjectList } from '../components/styled/project';
-import { StyledA } from '../components/styled/links';
+import { Text } from '../components/styled/text/text';
+import { Title } from '../components/styled/text/title';
+import { ProjectList } from '../components/styled/content/projectList';
+import { StyledText } from '../components/styled/text/styledText';
 import memory from '../../static/img/memory.png';
 import evnt from '../../static/img/evnt.png';
 import wro from '../../static/img/wro.png';
@@ -30,21 +31,20 @@ const works = () => (
         img={memory}
       />
       <ProjectCard
-        name="WrocFavs"
-        repo="wrocfavs"
-        demo="https://koko57.github.io/wrocfavs/"
-        desc="List of favourite spots in Wroclaw."
+        name="Wro"
+        repo="wro"
+        demo="https://koko57.github.io/wro/"
+        desc="List of best spots in Wroclaw."
         stack="React / Google Maps API / Foursquare API"
         img={wro}
       />
+      <Text align="center" margin="2rem">
+        <StyledText href="https://github.com/koko57" target="_blank">
+          More on <span>GitHub</span>
+        </StyledText>
+      </Text>
     </ProjectList>
-    <Text align="center" margin="3rem 0">
-      More on{'   '}
-      <StyledA href="https://github.com/koko57" target="_blank">
-        GitHub
-      </StyledA>
-    </Text>
-    <Navbar links={['about', 'contact']} />
+    <Navbar />
   </Main>
 );
 
