@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   height: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 2.5rem 4rem;
+  padding: 5rem 4rem;
   display: flex;
   flex-direction: column;
   @media screen and (max-width: 480px) {

@@ -30,7 +30,7 @@ export const Project = styled.div`
   @media screen and (max-width: 480px) {
     padding: 1rem 2rem;
     width: 100%;
-    height: 200px;
+    height: 225px;
     ::after {
       opacity: 0.7;
       background-size: cover;

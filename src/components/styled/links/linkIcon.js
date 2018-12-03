@@ -17,7 +17,7 @@ export const LinkIcon = styled.a`
     opacity: 0;
     transition: ease-in 0.25s;
     margin: 0 0.5rem;
-    vertical-align: 0.25em;
+    vertical-align: 0.2rem;
     @media screen and (max-width: 360px) {
       opacity: 1;
     }

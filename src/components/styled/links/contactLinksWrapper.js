@@ -6,7 +6,7 @@ export const ContactLinksWrapper = styled.div`
   align-items: center;
   height: 70%;
   width: 100%;
-  margin: 20% 0;
+  margin: 18% 0;
   @media screen and (max-width: 480px) {
     flex-direction: column;
     margin: 2rem auto;

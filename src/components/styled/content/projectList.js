@@ -6,6 +6,12 @@ export const ProjectList = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 4rem auto;
+  margin: 6rem auto;
   flex-wrap: wrap;
+  @media screen and (max-width: 810px) {
+    margin: 3rem auto;
+  }
+  @media screen and (max-width: 480px) {
+    margin: 2rem auto;
+  }
 `;
