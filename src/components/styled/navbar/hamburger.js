@@ -11,7 +11,7 @@ export const Hamburger = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    transition: ease-in-out 0.4s
+    transition: ease-in-out 0.4s;
   }
   & > .hide {
     opacity: 0;

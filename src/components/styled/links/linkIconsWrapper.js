@@ -7,5 +7,6 @@ export const LinkIconsWrapper = styled.div`
   justify-content: space-around;
   @media screen and (max-width: 480px) {
     bottom: 1rem;
+    left: 2rem;
   }
 `;

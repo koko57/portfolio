@@ -5,6 +5,7 @@ import Navbar from '../components/navbar';
 import Main from '../components/main';
 import { Icon } from '../components/styled/content/icon';
 import { IconsDiv } from '../components/styled/content/iconsDiv';
+import { AboutPageWrapper } from '../components/styled/main/aboutPageWrapper';
 
 const iconsNames = [
   'html',
@@ -25,18 +26,20 @@ const icons = iconsNames.map(i => {
 
 const index = () => (
   <Main>
-    <Title size={'7rem'} pad={'4rem'} main>
-      A.
-    </Title>
-    <Text pad="0 4rem">
-      <p>Agata Kosior</p>
-      <p>Junior Front End / JavaScript Developer</p>
-      <p>
-        Programming enthusiast, music connoiseur, coffee aficionado. Looking for
-        my first job in IT world.
-      </p>
-    </Text>
-    <IconsDiv>{icons}</IconsDiv>
+    <AboutPageWrapper>
+      <Title main>A.</Title>
+      <Text>
+        <p>Agata Kosior</p>
+        <p>Junior Front End / JavaScript Developer</p>
+        <p>
+          Programming enthusiast, coffee connoiseur, music aficionado.
+          <br />
+          Aspiring to become a Full Stack Ninja. <br />
+          Looking for my first job in IT world.
+        </p>
+      </Text>
+      <IconsDiv>{icons}</IconsDiv>
+    </AboutPageWrapper>
     <Navbar />
   </Main>
 );

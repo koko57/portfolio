@@ -31,17 +31,29 @@ class Navbar extends Component {
       <Nav id="nav" scrolled={scrolled} opened={opened}>
         <NavWrapper className="wrapper">
           <Hamburger onClick={this.handleClick}>
-            <X className={opened ? 'show': 'hide'}/>
-            <Menu className={!opened ? 'show': 'hide'}/>
+            <X className={opened ? 'show' : 'hide'} />
+            <Menu className={!opened ? 'show' : 'hide'} />
           </Hamburger>
-          <NavLinksWrapper className={opened ? 'show': null}>
-            <NavLink to="/" activeClassName="current" className={opened ? 'show': null}>
+          <NavLinksWrapper className={opened ? 'show' : null}>
+            <NavLink
+              to="/"
+              activeClassName="current"
+              className={opened ? 'show' : null}
+            >
               About
             </NavLink>
-            <NavLink to="/works" activeClassName="current" className={opened ? 'show': null}>
+            <NavLink
+              to="/works"
+              activeClassName="current"
+              className={opened ? 'show' : null}
+            >
               My Works
             </NavLink>
-            <NavLink to="/contact" activeClassName="current" className={opened ? 'show': null}>
+            <NavLink
+              to="/contact"
+              activeClassName="current"
+              className={opened ? 'show' : null}
+            >
               Contact
             </NavLink>
           </NavLinksWrapper>

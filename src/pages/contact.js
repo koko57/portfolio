@@ -8,7 +8,7 @@ import { ContactLink } from '../components/styled/links/contactLink';
 
 const contact = () => (
   <Main>
-    <Title size={'2rem'}>Contact</Title>
+    <Title>Contact</Title>
     <ContactLinksWrapper className="links">
       <ContactLink href="https://github.com/koko57" target="_blank">
         <span className="logo">

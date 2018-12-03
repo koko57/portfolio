@@ -1,15 +1,14 @@
 import styled from 'styled-components';
 
 export const Title = styled.h1`
-  font-size: ${({ size }) => size};
+  font-size: ${({ main }) => (main ? '7rem' : '2rem')};
   text-transform: uppercase;
   font-weight: normal;
-  padding-left: ${({ pad }) => (pad ? pad : 0)};
   cursor: default;
   width: 100%;
   text-align: left;
   @media screen and (max-width: 480px) {
     text-align: ${({ main }) => (main ? 'left' : 'center')};
-    padding-top: 2rem;
+    font-size: ${({ main }) => (main ? '5rem' : '2rem')};
   }
 `;

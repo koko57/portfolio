@@ -28,9 +28,9 @@ export const Project = styled.div`
     opacity: 1;
   }
   @media screen and (max-width: 480px) {
-    padding: 1rem 2rem;
     width: 100%;
     height: 225px;
+    padding: 1.5rem;
     ::after {
       opacity: 0.7;
       background-size: cover;
