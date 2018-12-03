@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const AboutPageWrapper = styled.div`
-  padding: 2rem 4rem;
+  padding: 0 4rem;
   @media screen and (max-width: 480px) {
     padding: 1rem 2.5rem;
   }
