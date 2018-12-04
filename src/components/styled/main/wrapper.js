@@ -11,6 +11,6 @@ export const Wrapper = styled.div`
     padding: 1rem 0;
   }
   @media screen and (max-height: 480px) {
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 0;
   }
 `;
