@@ -42,7 +42,7 @@ export const Project = styled.div`
     :last-of-type {
       font-size: 0.8rem;
     }
-  }
+  } 
   h2 {
     font-size: 1.3rem;
     font-weight: normal;

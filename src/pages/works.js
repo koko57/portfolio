@@ -17,7 +17,7 @@ const works = () => (
       <ProjectCard
         name="Evnt"
         repo="Evnt"
-        demo="http://evnt-220710.appspot.com/"
+        demo="https://evnt57.herokuapp.com/welcome"
         desc="Event planner app."
         stack="React / Redux / Node.js / MongoDB"
         img={evnt}
