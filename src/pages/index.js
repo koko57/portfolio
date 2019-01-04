@@ -14,10 +14,7 @@ const iconsNames = [
   'react',
   'redux',
   'git',
-  'sass',
-  'nodejs',
-  'python',
-  'ps'
+  'sass'
 ];
 
 const icons = iconsNames.map(i => {
@@ -35,7 +32,7 @@ const index = () => (
           Programming enthusiast, coffee connoiseur, music aficionado.
           <br />
           Aspiring to become a Full Stack Ninja. <br />
-          Looking for my first job in IT world.
+          Looking for my first job in the IT world.
         </p>
       </Text>
       <IconsDiv>{icons}</IconsDiv>
