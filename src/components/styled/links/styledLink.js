@@ -5,8 +5,10 @@ import { StyledUnderline } from '../utils/variables';
 export const StyledLink = styled(Link)`
   ${StyledUnderline}
   margin: 0 1rem;
-  :hover::after {
-    width: 80%;
+  @media (hover: hover) {
+    :hover::after {
+      width: 80%;
+    }
   }
   :active,
   &.current {

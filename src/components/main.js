@@ -13,15 +13,10 @@ const Main = ({ children }) => (
         { name: 'description', content: 'Portfolio page' },
         { name: 'keywords', content: 'portfolio, web developer' }
       ]}
-    >
-      <link
-        rel="icon"
-        type="image/png"
-        href="../../static/favicon.ico"
-        sizes="16x16"
-      />
-      <html lang="en" />
-    </Helmet>
+      link={[
+        { rel: 'icon', type: 'image/png', href: '../../static/icons/favicon.ico' }
+      ]}
+    />
     <GlobalStyle />
     <Page>
       <Wrapper>{children}</Wrapper>
