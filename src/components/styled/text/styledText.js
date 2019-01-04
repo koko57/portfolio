@@ -5,8 +5,10 @@ export const StyledText = styled.a`
   span {
     ${StyledUnderline}
   }
-  :hover span::after {
-    width: 80%;
+  @media (hover: hover) {
+    :hover span::after {
+      width: 80%;
+    }
   }
   @media screen and (max-width: 480px) {
     font-size: 1rem;

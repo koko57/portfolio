@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import { withPrefix } from 'gatsby';
 import { GlobalStyle } from './styled/main/global';
 import { Page } from './styled/main/page';
 import { Wrapper } from './styled/main/wrapper';
@@ -13,15 +14,10 @@ const Main = ({ children }) => (
         { name: 'description', content: 'Portfolio page' },
         { name: 'keywords', content: 'portfolio, web developer' }
       ]}
-    >
-      <link
-        rel="icon"
-        type="image/png"
-        href="../../static/favicon.ico"
-        sizes="16x16"
-      />
-      <html lang="en" />
-    </Helmet>
+      link={[
+        { rel: 'icon', type: 'image/png', href: `${withPrefix('favicon.ico')}` }
+      ]}
+    />
     <GlobalStyle />
     <Page>
       <Wrapper>{children}</Wrapper>

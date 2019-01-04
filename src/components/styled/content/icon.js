@@ -2,10 +2,9 @@ import styled from 'styled-components';
 import { withPrefix } from 'gatsby';
 
 export const Icon = styled.div`
-  background: url(${({ url }) => withPrefix(`icons/${url}.png`)});
-  background-image: ${({ url }) => `url${withPrefix(`icons/${url}.png`)}`};
   height: 2.5rem;
   width: 2.5rem;
+  background-image: url(${({ url }) => withPrefix(`icons/${url}.png`)});
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
