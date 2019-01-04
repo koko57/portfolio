@@ -10,7 +10,6 @@ export const StyledText = styled.a`
       width: 80%;
     }
   }
-
   @media screen and (max-width: 480px) {
     font-size: 1rem;
   }
