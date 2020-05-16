@@ -27,12 +27,12 @@ const index = () => (
       <Title main>A.</Title>
       <Text>
         <p>Agata Kosior</p>
-        <p>Junior Front End / JavaScript Developer</p>
+        <p>Front-End / JavaScript Developer</p>
         <p>
           Programming enthusiast, coffee connoiseur, music aficionado.
           <br />
           Aspiring to become a Full Stack Ninja. <br />
-          Looking for my first job in the IT world.
+          Looking for new challenges in the IT world.
         </p>
       </Text>
       <IconsDiv>{icons}</IconsDiv>
