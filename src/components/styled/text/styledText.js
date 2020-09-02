@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { StyledUnderline } from '../utils/variables';
+import { StyledUnderline } from '../../utils/variables';
 
 export const StyledText = styled.a`
   span {

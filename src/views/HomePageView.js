@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Text } from "../components/styled/text/text";
 import { Title } from "../components/styled/text/title";
 import Navbar from "../components/navbar";
-import { IconsContainer } from "../containers/IconsContainer";
+import { Icons } from "../components/Icons";
 
 export const HomePageWrapper = styled.div`
 	padding: 0 4rem;
@@ -34,7 +34,7 @@ export const HomePageView = () => {
 						Looking for new challenges in the IT world.
 					</p>
 				</Text>
-				<IconsContainer />
+				<Icons />
 			</HomePageWrapper>
 			<Navbar />
 		</>

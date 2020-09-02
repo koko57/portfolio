@@ -1,10 +1,33 @@
 import React from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { withPrefix } from 'gatsby';
-import { GlobalStyle } from './styled/main/global';
-import { Page } from './styled/main/page';
-import { Wrapper } from './styled/main/wrapper';
+import { GlobalStyle } from '../styles/global';
+
+const SPage = styled.div`
+  width: 100%;
+  color: #303030;
+  position: relative;
+`;
+
+const SWrapper = styled.div`
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 5rem 4rem;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 480px) {
+    padding: 1rem 0;
+  }
+  
+  @media screen and (max-height: 480px) {
+    padding: 1.5rem 0;
+  }
+`;
+
 
 const Main = ({ children }) => (
   <>
@@ -19,9 +42,9 @@ const Main = ({ children }) => (
       ]}
     />
     <GlobalStyle />
-    <Page>
-      <Wrapper>{children}</Wrapper>
-    </Page>
+    <SPage>
+      <SWrapper>{children}</SWrapper>
+    </SPage>
   </>
 );
 

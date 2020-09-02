@@ -1,6 +1,6 @@
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import { StyledUnderline } from '../utils/variables';
+import { StyledUnderline } from '../../utils/variables';
 
 export const StyledLink = styled(Link)`
   ${StyledUnderline}

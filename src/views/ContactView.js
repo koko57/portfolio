@@ -1,8 +1,8 @@
 import React from "react";
 import { Title } from '../components/styled/text/title';
 import Navbar from '../components/navbar';
-import { ContactLinksWrapper } from '../components/styled/links/contactLinksWrapper';
-import { ContactLink } from '../components/styled/links/contactLink';
+import { ContactLinksWrapper } from '../components/contactLinksWrapper';
+import { ContactLink } from '../components/ContactLink';
 import { GitHub, Linkedin, Mail } from 'react-feather';
 
 export const ContactView = () => {

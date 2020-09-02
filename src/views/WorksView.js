@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from '../components/navbar';
-import ProjectCard from '../components/projectCard';
+import ProjectCard from '../components/ProjectCard';
 import { Text } from '../components/styled/text/text';
 import { Title } from '../components/styled/text/title';
-import { ProjectList } from '../components/styled/content/projectList';
+import { ProjectList } from '../components/ProjectList';
 import { StyledText } from '../components/styled/text/styledText';
 import memory from '../../static/img/memory.png';
 import evnt from '../../static/img/evnt.png';
