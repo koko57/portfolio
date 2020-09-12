@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar } from "../components/Navbar";
-import ProjectCard from "../components/ProjectCard";
+import { ProjectCard } from "../components/ProjectCard";
 import { Text } from "../components/Text";
 import { Title } from "../components/Title";
 import { ProjectList } from "../components/ProjectList";

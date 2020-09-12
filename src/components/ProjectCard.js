@@ -58,7 +58,7 @@ const SProject = styled.div`
 	}
 `;
 
-const ProjectCard = ({ name, repo, demo, desc, stack, img }) => {
+export const ProjectCard = ({ name, repo, demo, desc, stack, img }) => {
 	return (
 		<SProject img={img}>
 			<h2>{name}</h2>
@@ -68,5 +68,3 @@ const ProjectCard = ({ name, repo, demo, desc, stack, img }) => {
 		</SProject>
 	);
 };
-
-export default ProjectCard;
