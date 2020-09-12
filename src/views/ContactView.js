@@ -1,5 +1,5 @@
 import React from "react";
-import { Title } from "../components/styled/text/title";
+import { Title } from "../components/Title";
 import { Navbar } from "../components/Navbar";
 import { ContactLinksWrapper } from "../components/ContactLinksWrapper";
 import { ContactLink } from "../components/ContactLink";

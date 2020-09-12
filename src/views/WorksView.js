@@ -1,10 +1,10 @@
 import React from "react";
 import { Navbar } from "../components/Navbar";
 import ProjectCard from "../components/ProjectCard";
-import { Text } from "../components/styled/text/text";
-import { Title } from "../components/styled/text/title";
+import { Text } from "../components/Text";
+import { Title } from "../components/Title";
 import { ProjectList } from "../components/ProjectList";
-import { StyledText } from "../components/styled/text/styledText";
+import { StyledText } from "../components/StyledText";
 import memory from "../../static/img/memory.png";
 import evnt from "../../static/img/evnt.png";
 import wro from "../../static/img/wro.png";

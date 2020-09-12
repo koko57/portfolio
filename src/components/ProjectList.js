@@ -9,9 +9,11 @@ const SProjectList = styled.div`
 	align-items: center;
 	margin: 6rem auto;
 	flex-wrap: wrap;
+
 	@media screen and (max-width: 810px) {
 		margin: 3rem auto;
 	}
+    
 	@media screen and (max-width: 480px) {
 		margin: 2rem auto;
 	}

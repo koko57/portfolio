@@ -1,15 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import { StyledLink } from "./styled/links/styledLink";
+import { StyledLink } from "./StyledLink";
 
-export const NavLink = styled(StyledLink)`
+const NavLink = styled(StyledLink)`
 	@media screen and (max-width: 810px) {
 		margin: 1rem 0;
 		font-size: 1.1rem;
 	}
 `;
 
-export const SNavLinksWrapper = styled.div`
+const SNavLinksWrapper = styled.div`
 	width: 100%;
 	position: relative;
 	display: flex;

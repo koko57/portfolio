@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { StyledUnderline } from "./utils/variables";
+import { StyledUnderline } from "../styles/variables";
 
 export const SContactLink = styled.a`
 	display: flex;
@@ -9,8 +9,8 @@ export const SContactLink = styled.a`
 	align-items: center;
 
 	.logo {
-		${StyledUnderline}
 		margin-bottom: 0.75rem;
+		${StyledUnderline};
 	}
 
 	.name {

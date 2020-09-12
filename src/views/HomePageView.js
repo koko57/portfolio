@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Text } from "../components/styled/text/text";
-import { Title } from "../components/styled/text/title";
+import { Text } from "../components/Text";
+import { Title } from "../components/Title";
 import { Navbar } from "../components/Navbar";
 import { Icons } from "../components/Icons";
 
