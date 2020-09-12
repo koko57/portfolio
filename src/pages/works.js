@@ -1,11 +1,11 @@
-import React from "react";
-import Main from "../components/Main";
-import { WorksView } from "../views/WorksView";
+import React from 'react'
+import Main from '../components/Main'
+import { WorksView } from '../views/WorksView'
 
 const works = () => (
-	<Main>
-		<WorksView />
-	</Main>
-);
+    <Main>
+        <WorksView />
+    </Main>
+)
 
-export default works;
+export default works
